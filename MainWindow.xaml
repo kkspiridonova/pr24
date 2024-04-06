@@ -5,10 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,0,10,0">
-        <Button Content="Пройти тестик" HorizontalAlignment="Left" Margin="117,308,0,0" VerticalAlignment="Top" Height="40" Width="195" Background="#FFA2E2C1"/>
-        <Button Content="Редактировать тестик" HorizontalAlignment="Left" Margin="500,308,0,0" VerticalAlignment="Top" Height="40" Width="195" Background="#FFA2E2C1" Click="Button_Click" RenderTransformOrigin="0.701,0.311"/>
+        Title="MainWindow" Height="317" Width="382">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Редактировать тестик" Grid.Row="1" Grid.Column="1" Margin="5,13,5,13" Cursor="" Click="Button_Click"/>
+        <Button Content="Пройти тестик" Grid.Row="1" Grid.Column="0" Margin="5,13,5,13" Click="Button_Click_1"/>
+        <TextBlock Text="Какой ты овощ" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" FontFamily="Arial Black"/>
+        <TextBox x:Name="CodeTbx" Grid.Row="2" Grid.Column="1" Margin="0,0,0,78" IsEnabled="False" KeyUp="CodeTbx_KeyUp" />
     </Grid>
 </Window>

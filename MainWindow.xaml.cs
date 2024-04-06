@@ -27,7 +27,25 @@ namespace WpfApp2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            CodeTbx.IsEnabled = true;
 
+        }
+
+        private void CodeTbx_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (CodeTbx.Text == "куку")
+            {
+                Window1 window = new Window1(1);
+                window.Show();
+                Close();
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window1 window2 = new Window1(2);
+            window2.Show();
+            Close();
         }
     }
 }

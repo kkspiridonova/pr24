@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\User\source\repos\WpfApp2\App.xaml
-11407045341
+5-1816205444
 
-51516046776
-194726069201
-MainWindow.xaml;
+10-1711105780
+195127688395
+MainWindow.xaml;Page1.xaml;Page2.xaml;Page3.xaml;Window1.xaml;
 
-False
+True
 
